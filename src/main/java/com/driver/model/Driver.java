@@ -16,8 +16,7 @@ public class Driver{
     @OneToMany(mappedBy = "driver",cascade = CascadeType.ALL)
     private List<TripBooking> tripBookingList;
 
-    @OneToOne
-    @JoinColumn
+    @OneToOne(mappedBy = "driver")
     private Cab cab;
 
     public Driver(){

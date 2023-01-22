@@ -16,7 +16,7 @@ public class Cab{
     private boolean available;
 
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn
     private Driver driver;
 
