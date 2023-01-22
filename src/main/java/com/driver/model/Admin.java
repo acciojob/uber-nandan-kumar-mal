@@ -6,9 +6,11 @@ import javax.persistence.*;
 @Entity
 public class Admin{
 
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private int AdminId;
 
 
 
@@ -42,4 +44,11 @@ public class Admin{
         this.password = password;
     }
 
+    public int getAdminId() {
+        return AdminId;
+    }
+
+    public void setAdminId(int adminId) {
+        AdminId = adminId;
+    }
 }

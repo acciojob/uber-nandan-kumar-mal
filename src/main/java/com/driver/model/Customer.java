@@ -9,7 +9,7 @@ public class Customer{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private int CustomerId;
 
     private String mobile;
 
@@ -28,12 +28,12 @@ public class Customer{
     }
 
 
-    public int getId() {
-        return id;
+    public int getCustomerId() {
+        return CustomerId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCustomerId(int customerId) {
+        this.CustomerId = customerId;
     }
 
 
